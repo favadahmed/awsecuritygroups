@@ -10,7 +10,7 @@ except boto.exception.BotoServerError,e:log.error(e.error_message)
 conn.close()
 
 for sg in current_sgs:
-  print "="*80
+  print "="*70
   print "id:\t\t", sg.id
   print "name:\t\t", sg.name
   print "vpc:\t\t", sg.vpc_id
